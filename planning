@@ -1,7 +1,8 @@
-i will be using vsCode for the front end design work and using Netbeans25 for backend.
-this is just so it will be easier for me to keep the two seperate for a while before i decide to the design.
-there are currently around 99 items(objects) i will need to create classes for, i will not list them out, 
-however i will list the classes i have them grouped into:
+I will be using vsCode for the frontend design work and using Netbeans25 for backend.
+This is just so it will be easier for me to keep the two seperate for a while before i decide on the design.
+There are currently around 99 items(objects) i will need to create classes for
+here are the classes i have decided to group the items (objects) into:
+
 🥩 Meat & Seafood 
 Chicken breast 
 Cooked chicken 
@@ -66,3 +67,7 @@ Wah Loong mixed spice
 Food soda 
 Star anise 
 Cinnamon sticks 
+
+
+Now that they are grouped into classes i have to establish how the classes relate to eachother (i.e. inheritance, composition etc)
+
