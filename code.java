@@ -1,6 +1,75 @@
-Here is the code so far. i have only done the meat and seafood section.
-array list was used:
+//Initial version of meatvegStock class using hardcoded fields for 11 items:
 
+public class meatvegStock {
+    
+//fields
+  String item1;
+  String item2;
+  String item3;
+  String item4;
+  String item5;
+  String item6;
+  String item7;
+  String item8;
+  String item9;
+  String item10;
+  String item11;
+  String item12;
+
+  //constructor
+    public meatvegStock(String item1, String item2, String item3, String item4, String item5, String item6, String item7, String item8, String item9, String item10, String item11) {
+        this.item1 = item1;
+        this.item2 = item2;
+        this.item3 = item3;
+        this.item4 = item4;
+        this.item5 = item5;
+        this.item6 = item6;
+        this.item7 = item7;
+        this.item8 = item8;
+        this.item9 = item9;
+        this.item10 = item10;
+        this.item11 = item11;
+      
+    }
+  public void displayInfo() {
+      System.out.println("Item 1: " + item1);
+      System.out.println("Item 2: " + item2);
+      System.out.println("Item 3: " + item3);
+      System.out.println("Item 4: " + item4);
+      System.out.println("Item 5: " + item5);
+      System.out.println("Item 6: " + item6);
+      System.out.println("Item 7: " + item7);
+      System.out.println("Item 8: " + item8);
+      System.out.println("Item 9: " + item9);
+      System.out.println("Item 10: " + item10);
+      System.out.println("Item 11: " + item11);
+      
+  }
+  public static void main(String[] args) {
+      meatvegStock Restock1 = new meatvegStock (
+      "chicken breast (TDH)",
+      "cooked chicken (c vale)",
+      "spare rib meat (Ho Wan)",
+      "pork neck (13.6kg)",
+      "duck 2.6 county",
+      "cooked duck breast",
+      "king prawn (31/40)",
+      "squid tubes",
+      "crabmeat",
+      "shrimp 100/200",
+      "scallop");
+      
+      System.out.println("");
+      Restock1.displayInfo();
+  }
+}
+
+//when i finished the code above i realised it didnt look right as there was a bunch of repeats of the items etc
+ 
+//I then refactored meatvegStock into MeatAndSeafood class using ArrayList for dynamic item handling
+
+
+// final version of the MeatandSeafood class.
 
   import java.util.ArrayList;
 
