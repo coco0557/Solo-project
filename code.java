@@ -1,5 +1,6 @@
 Here is the code so far. i have only done the meat and seafood section.
-array list was used
+array list was used:
+
 
   import java.util.ArrayList;
 
@@ -42,3 +43,17 @@ for (String item : items) {
         restock.displayItems();
   }
 }
+
+OUTPUT:
+===Meat and Seafood items===
+- Chicken breast (TDH)
+- Cooked chicken (C Vale)
+- Spare rib meat (Ho Wan)
+- Pork neck (13.6kg)
+- Duck 2.6 county
+- Cooked duck breast
+- King prawn (31/40)
+- Squid tubes
+- Crabmeat
+- Shrimp 100/200
+- Scallop
