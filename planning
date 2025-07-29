@@ -1,7 +1,13 @@
 21/07/25
 i will be learning as i go on throughout this project, so there will be lota of updates and many errors which i will see later.
-I will be using vsCode for the frontend design work and using Netbeans25 for backend.
+I will be using vsCode for the frontend design work and using Netbeans23 for backend.
 This is just so it will be easier for me to keep the two seperate for a while before i decide on the design.
+
+The proccess for getting the stock list was to speak to the owner of the restaurant snd tell him about the idea 
+of digitlising the stock system so it can be accessed from anywhere at all times. 
+This makes it more effiecient for the owner/kitchen staff as they will not be required to be in the 
+restaurant to see the stock levels as they would be able to seee current stock levels from their home.
+
 There are currently around 99 items(objects) i will need to create classes for
 here are the classes i have decided to group the items (objects) into:
 
