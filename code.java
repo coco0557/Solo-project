@@ -66,7 +66,7 @@ public class meatvegStock {
 
 //when i finished the code above i realised it didnt look right as there was a bunch of repeats of the items etc
  
-//I then refactored meatvegStock into MeatAndSeafood class using ArrayList for dynamic item handling
+//I then refactored meatvegStock into MeatAndSeafood class using ArrayList for dynamic item handling - i will be using this structure for the rest of the other classes too before i create a stock management system.
 
 
 // final version of the MeatandSeafood class.
