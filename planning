@@ -1,17 +1,19 @@
 21/07/25
-i will be learning as i go on throughout this project, so there will be lota of updates and many errors which i will see later.
-I will be using vsCode for the frontend design work and using Netbeans23 for backend.
-This is just so it will be easier for me to keep the two seperate for a while before i decide on the design.
+I’m building this project while learning, so there will be regular updates and improvements as I progress. 
+I expect there will be some errors and trial and error early on, but this is part of my learning process.
 
-The proccess for getting the stock list was to speak to the owner of the restaurant snd tell him about the idea 
-of digitlising the stock system so it can be accessed from anywhere at all times. 
-This makes it more effiecient for the owner/kitchen staff as they will not be required to be in the 
-restaurant to see the stock levels as they would be able to seee current stock levels from their home.
+I’m using VS Code for the frontend design and NetBeans 25 for the backend Java development.
+Keeping these separate helps me stay organised while I focus on functionality first and decide on the design later.
 
-There are currently around 99 items(objects) i will need to create classes for
+The initial step was to speak directly with the owner of the restaurant where I work, and explain the idea of digitising the stock system. 
+The goal is to make the system accessible from anywhere
+so that the owner and kitchen staff can check stock levels remotely, without needing to be physically at the restaurant.
+
+There are currently around 99 items to be managed in the system, which I’m organising into different categories and Java classes
+(e.g Meat & Seafood, Vegetables, Prepared Items). These will help structure the code in a maintainable way as the project grows.
 here are the classes i have decided to group the items (objects) into:
 
-🥩 Meat & Seafood - done 
+🥩 Meat & Seafood  
 Chicken breast 
 Cooked chicken 
 Spare rib meat
@@ -24,7 +26,7 @@ Crabmeat
 Shrimp 
 Scallop 
 
-🥬 Vegetables & Fresh Produce - done 
+🥬 Vegetables & Fresh Produce  
 Pak choi 
 Baby corn cob 
 Spring onion (big heads) 
@@ -34,7 +36,7 @@ Garlic flake
 Ginger 
 Peas 
 
-🥟 Prepared Frozen Items - done 
+🥟 Prepared Frozen Items 
 Pork gyoza
 Veg gyoza 
 Chicken gyoza 
@@ -43,7 +45,7 @@ Wonton pastry
 Breaded torpedo KP 
 Duck skin (pancake) 
 
-🍜 Noodles & Rice - done 
+🍜 Noodles & Rice 
 Rice 
 Noodle
 Udon 
@@ -51,7 +53,7 @@ Rice sticks
 Vietnamese rice paper 
 Rice stick ban pho 
 
-🥫 Canned & Jarred Goods - TBC
+🥫 Canned & Jarred Goods 
 Chinese shredded radish (TIN) 
 Cream style corn 
 Lychees 
@@ -61,7 +63,7 @@ Water chestnut
 Poku mushrooms 
 Group fried fish 
 
-🧂 Spices & Seasonings - TBC
+🧂 Spices & Seasonings
 MSG (L) 
 Bay leaves 
 Ground white pepper 
@@ -76,6 +78,9 @@ Food soda
 Star anise 
 Cinnamon sticks 
 
+29/07/25
+i have now put all the classes into code.
+the next step for me now is to create a StockManagement system
 
 Now that they are grouped into classes i have to establish how the classes relate to eachother (i.e. inheritance, composition etc)
 
