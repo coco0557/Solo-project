@@ -39,3 +39,38 @@ for (String item : items){
     }
     
 }
+
+// new update for the code - i have added the StockCategory and InventoryManager:
+// here is the updated code using the both of them
+
+import java.util.ArrayList;
+public class spiceAndSeasonings extends StockCategory {
+    
+    public spiceAndSeasonings(ArrayList<String> items) {
+    super(items);
+
+    }
+    public static void main(String[] args) {
+        ArrayList<String> spiceList = new ArrayList<>();
+        spiceList.add("MSG (L)");
+        spiceList.add("Bay Leaves");
+        spiceList.add("Ground white pepper");
+        spiceList.add("white sugar ");
+        spiceList.add("salt (L)");
+        spiceList.add("Yellow ginger powder");
+        spiceList.add("Curry powder (10kg)");
+        spiceList.add("Red Curry Paste");
+        spiceList.add("Green curry paste");
+        spiceList.add("Wah loong mixed spice");
+        spiceList.add("Food soda");
+        spiceList.add("Star anise");
+        spiceList.add("Cinnamon sticks");
+        
+        spiceAndSeasonings spiceStock = new spiceAndSeasonings(spiceList);
+      
+        InventoryManager manager = new InventoryManager();
+        manager.addCategory(spiceStock);
+        manager.displayAllStock();
+    }
+    
+}
