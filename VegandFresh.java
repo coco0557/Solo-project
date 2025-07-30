@@ -37,3 +37,32 @@ for (String item : items) {
     }
     
 }
+
+
+// new update for the code - i have added the StockCategory and InventoryManager:
+// here is the updated code using the both of them
+
+import java.util.ArrayList;
+public class VegandFresh extends StockCategory {
+    
+    public VegandFresh(ArrayList<String> items) {
+        super(items); 
+    }
+  
+    public static void main(String[] args) {
+        ArrayList<String> vegList = new ArrayList<>();
+        vegList.add("Pak choi");
+        vegList.add("Baby corn cob");
+        vegList.add("Spring onion (Big head)");
+        vegList.add("Bamboo strip small thin");
+        vegList.add("Beansprouts");
+        vegList.add("Garlic flake");
+        vegList.add("Ginger");
+        vegList.add("Peas");
+        VegandFresh restock = new VegandFresh(vegList);
+        InventoryManager manager = new InventoryManager();
+        manager.addCategory(restock);
+        manager.displayAllStock();
+    }
+    
+}
