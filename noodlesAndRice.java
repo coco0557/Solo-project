@@ -36,6 +36,8 @@ public class noodlesAndRice {
     
 }
 
+// new update for the code - i have added the StockCategory and InventoryManager:
+// here is the updated code using the both of them
 
 import java.util.ArrayList;
 public class noodlesAndRice extends StockCategory {
