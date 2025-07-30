@@ -10,6 +10,7 @@ public class InventoryManager {
     public void addCategory(StockCategory category) {
         categories.add(category);
     }
+    //add item search
     public void searchItem(String itemName) {
     for (StockCategory category : categories) {
         for (Item item : category.getItems()) {
