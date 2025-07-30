@@ -40,3 +40,34 @@ for (String item : items) {
   }
 }
   
+
+// new update for the code - i have added the StockCategory and InventoryManager:
+// here is the updated code using the both of them
+
+import java.util.ArrayList;
+public class MeatAndSeafood extends StockCategory {
+    
+    public MeatAndSeafood(ArrayList<String> items) {
+        super(items); 
+    }
+  
+  public static void main(String[] args) {
+         ArrayList<String> meatList = new ArrayList<>();
+        meatList.add("Chicken breast (TDH)");
+        meatList.add("Cooked chicken (C Vale)");
+        meatList.add("Spare rib meat (Ho Wan)");
+        meatList.add("Pork neck (13.6kg)");
+        meatList.add("Duck 2.6 county");
+        meatList.add("Cooked duck breast");
+        meatList.add("King prawn (31/40)");
+        meatList.add("Squid tubes");
+        meatList.add("Crabmeat");
+        meatList.add("Shrimp 100/200");
+        meatList.add("Scallop");
+        MeatAndSeafood restock = new MeatAndSeafood(meatList);
+        
+        InventoryManager manager = new InventoryManager();
+        manager.addCategory(restock);
+        manager.displayAllStock();
+  }
+}
