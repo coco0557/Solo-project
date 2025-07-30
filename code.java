@@ -190,3 +190,40 @@ public class spiceAndSeasonings extends StockCategory {
     }
     
 }
+
+// i have updated the code once again however this time i have added a reusable 
+// Item class to track quantity and hold stock name 
+//(this has been done for all classes)
+
+
+import java.util.ArrayList;
+public class spiceAndSeasonings extends StockCategory {
+    
+    public spiceAndSeasonings(ArrayList<Item> items) {
+    super(items);
+
+    }
+    public static void main(String[] args) {
+        ArrayList<Item> spiceList = new ArrayList<>();
+        spiceList.add(new Item("MSG (L)",2));
+        spiceList.add(new Item("Bay Leaves",1));
+        spiceList.add(new Item("Ground white pepper",3));
+        spiceList.add(new Item("white sugar ",1));
+        spiceList.add(new Item("salt (L)",1));
+        spiceList.add(new Item("Yellow ginger powder",3));
+        spiceList.add(new Item("Curry powder (10kg)",2));
+        spiceList.add(new Item("Red Curry Paste",2));
+        spiceList.add(new Item("Green curry paste",2));
+        spiceList.add(new Item("Wah loong mixed spice",3));
+        spiceList.add(new Item("Food soda",2));
+        spiceList.add(new Item("Star anise",3));
+        spiceList.add(new Item("Cinnamon sticks",2));
+        
+        spiceAndSeasonings spiceStock = new spiceAndSeasonings(spiceList);
+      
+        InventoryManager manager = new InventoryManager();
+        manager.addCategory(spiceStock);
+        manager.displayAllStock();
+    }
+    
+}
