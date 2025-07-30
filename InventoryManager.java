@@ -21,8 +21,33 @@ public class InventoryManager {
             }
         }
     }
+    }
+    // add update quantity
+   public void updateQuantity(String itemName, int newQuantity) {
+    for (StockCategory category : categories) {
+        for (Item item : category.getItems()) {
+            if (item.getName().equalsIgnoreCase(itemName)) {
+                item.setQuantity(newQuantity);
+                System.out.println("Updated " + item.getName() + " to quantity: " + newQuantity);
+                return;
+            }
+        }
+    }
     System.out.println("Item not found: " + itemName);
 }
+//add low stock warning
+    
+public void checkLowStock(int threshold) {
+    System.out.println("=== Low Stock Alert (below " + threshold + ") ===");
+    for (StockCategory category : categories) {
+        for (Item item : category.getItems()) {
+            if (item.getQuantity() <= threshold) {
+                System.out.println("- " + item.getName() + " (Qty: " + item.getQuantity() + ")");
+            }
+        }
+    }
+}
+
 
     public void displayAllStock() {
         for (StockCategory category : categories) {
