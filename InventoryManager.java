@@ -10,39 +10,80 @@ public class InventoryManager {
     public void addCategory(StockCategory category) {
         categories.add(category);
     }
-    //add item search
-    public void searchItem(String itemName) {
+  // create a method to search for an item by name
+public void searchItem(String itemName) {
+    
+    // loop through each stock category in the inventory
     for (StockCategory category : categories) {
+        
+        // loop through all the items in the current category
         for (Item item : category.getItems()) {
+            
+            // check if the item's name matches the one we're searching for (ignores upper/lowercase)
             if (item.getName().equalsIgnoreCase(itemName)) {
+                
+                // get the category name using class name (e.g. spiceAndSeasonings)
                 String categoryName = category.getClass().getSimpleName();
+                
+                // print out the item details and the category it belongs to
                 System.out.println("Found: " + item.getName() + " (Qty: " + item.getQuantity() + ") in " + categoryName);
+                
+                // exit the method once the item is found
                 return;
             }
         }
     }
-    }
-    // add update quantity
-   public void updateQuantity(String itemName, int newQuantity) {
-    for (StockCategory category : categories) {
-        for (Item item : category.getItems()) {
-            if (item.getName().equalsIgnoreCase(itemName)) {
-                item.setQuantity(newQuantity);
-                System.out.println("Updated " + item.getName() + " to quantity: " + newQuantity);
-                return;
-            }
-        }
-    }
+    
+    // if the item wasn't found in any category, print this message
     System.out.println("Item not found: " + itemName);
 }
-//add low stock warning
+
+  // create a method to update the quantity of an item by name
+public void updateQuantity(String itemName, int newQuantity) {
     
-public void checkLowStock(int threshold) {
-    System.out.println("=== Low Stock Alert (below " + threshold + ") ===");
+    // loop through each category in the inventory
     for (StockCategory category : categories) {
+        
+        // loop through each item in the current category
         for (Item item : category.getItems()) {
-            if (item.getQuantity() <= threshold) {
-                System.out.println("- " + item.getName() + " (Qty: " + item.getQuantity() + ")");
+            
+            // check if the item name matches the one we want to update
+            if (item.getName().equalsIgnoreCase(itemName)) {
+                
+                // update the quantity of the item
+                item.setQuantity(newQuantity);
+                
+                // confirm the update in console
+                System.out.println("Updated: " + item.getName() + " to quantity " + newQuantity);
+                
+                // stop searching once the item has been found and updated
+                return;
+            }
+        }
+    }
+    
+    // if item isn't found in any category, print this message
+    System.out.println("Item not found: " + itemName);
+}
+
+// create a method to check and display all items with low stock (less than 2)
+public void checkLowStock() {
+    
+    // notify that this is the low stock check
+    System.out.println("=== Low Stock Items (< 2) ===");
+
+    // loop through each category in the inventory
+    for (StockCategory category : categories) {
+        
+        // get the category name from the class
+        String categoryName = category.getClass().getSimpleName();
+        
+        // loop through each item in the current category
+        for (Item item : category.getItems()) {
+            
+            // if the quantity is less than 2, display it as low stock
+            if (item.getQuantity() < 2) {
+                System.out.println("- " + item.getName() + " (Qty: " + item.getQuantity() + ") in " + categoryName);
             }
         }
     }
