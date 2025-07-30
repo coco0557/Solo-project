@@ -1,71 +1,83 @@
+// add the Scanner and ArrayList utilities
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// create a main class to launch the inventory system
 public class MainApp {
+
     public static void main(String[] args) {
+
+        // create Scanner object to collect user input
+        Scanner scanner = new Scanner(System.in);
+
+        // initialise the inventory manager
         InventoryManager manager = new InventoryManager();
 
-        // === Create and add Meat & Seafood category ===
+        // ======================
+        // create and add each stock category
+        // ======================
+
+        // Meat & Seafood Category
         ArrayList<Item> meatList = new ArrayList<>();
         meatList.add(new Item("Chicken breast (TDH)", 3));
         meatList.add(new Item("Cooked chicken (C Vale)", 2));
-        meatList.add(new Item("Spare rib meat (Ho Wan)", 4));
-        meatList.add(new Item("Pork neck (13.6kg)", 1));
+        meatList.add(new Item("Spare rib meat (Ho Wan)", 1));
+        meatList.add(new Item("Pork neck (13.6kg)", 3));
         meatList.add(new Item("Duck 2.6 county", 2));
-        meatList.add(new Item("Cooked duck breast", 3));
-        meatList.add(new Item("King prawn (31/40)", 5));
+        meatList.add(new Item("Cooked duck breast", 2));
+        meatList.add(new Item("King prawn (31/40)", 3));
         meatList.add(new Item("Squid tubes", 2));
-        meatList.add(new Item("Crabmeat", 3));
-        meatList.add(new Item("Shrimp 100/200", 1));
+        meatList.add(new Item("Crabmeat", 1));
+        meatList.add(new Item("Shrimp 100/200", 2));
         meatList.add(new Item("Scallop", 2));
-        manager.addCategory(new MeatAndSeafood(meatList));
+        manager.addCategory(new MeatAndSeafood(meatList)); // add category to manager
 
-        // === Create and add Vegetables & Fresh Produce category ===
+        // Vegetables & Fresh Produce Category
         ArrayList<Item> vegList = new ArrayList<>();
         vegList.add(new Item("Pak choi", 3));
         vegList.add(new Item("Baby corn cob", 2));
-        vegList.add(new Item("Spring onion (Big head)", 4));
-        vegList.add(new Item("Bamboo strip small thin", 1));
-        vegList.add(new Item("Beansprouts", 2));
-        vegList.add(new Item("Garlic flake", 3));
-        vegList.add(new Item("Ginger", 4));
-        vegList.add(new Item("Peas", 2));
+        vegList.add(new Item("Spring onion (Big head)", 1));
+        vegList.add(new Item("Bamboo strip small thin", 2));
+        vegList.add(new Item("Beansprouts", 3));
+        vegList.add(new Item("Garlic flake", 2));
+        vegList.add(new Item("Ginger", 3));
+        vegList.add(new Item("Peas", 1));
         manager.addCategory(new VegandFresh(vegList));
 
-        // === Create and add Prepared Frozen Items category ===
+        // Prepared Frozen Items Category
         ArrayList<Item> frozenList = new ArrayList<>();
         frozenList.add(new Item("Pork gyoza", 2));
-        frozenList.add(new Item("Veg gyoza", 3));
-        frozenList.add(new Item("Chicken gyoza", 2));
-        frozenList.add(new Item("Veg spring roll", 4));
+        frozenList.add(new Item("Veg gyoza", 2));
+        frozenList.add(new Item("Chicken gyoza", 1));
+        frozenList.add(new Item("Veg spring roll", 3));
         frozenList.add(new Item("Wonton pastry", 1));
         frozenList.add(new Item("Breaded torpedo KP", 2));
         frozenList.add(new Item("Duck skin (pancake)", 2));
         manager.addCategory(new preparedFrozenItems(frozenList));
 
-        // === Create and add Noodles & Rice category ===
+        // Noodles & Rice Category
         ArrayList<Item> noodleList = new ArrayList<>();
         noodleList.add(new Item("Rice", 4));
         noodleList.add(new Item("Noodle", 3));
         noodleList.add(new Item("Udon", 2));
         noodleList.add(new Item("Rice sticks", 2));
         noodleList.add(new Item("Vietnamese rice paper", 1));
-        noodleList.add(new Item("Rice stick ban pho", 2));
+        noodleList.add(new Item("Rice stick ban pho", 3));
         manager.addCategory(new noodlesAndRice(noodleList));
 
-        // === Create and add Canned & Jarred Goods category ===
+        // Canned & Jarred Goods Category
         ArrayList<Item> cannedList = new ArrayList<>();
         cannedList.add(new Item("Chinese shredded radish (TIN)", 2));
-        cannedList.add(new Item("Cream style corn", 2));
-        cannedList.add(new Item("Lychees", 1));
+        cannedList.add(new Item("Cream style corn", 1));
+        cannedList.add(new Item("Lychees", 2));
         cannedList.add(new Item("Pineapple pieces (L)", 2));
         cannedList.add(new Item("Water chestnut", 3));
-        cannedList.add(new Item("1/2 straw mushrooms", 2));
+        cannedList.add(new Item("½ straw mushrooms", 2));
         cannedList.add(new Item("Poku mushrooms", 3));
         cannedList.add(new Item("Group fried fish", 2));
         manager.addCategory(new CannedAndJarred(cannedList));
 
-        // === Create and add Spices & Seasonings category ===
+        // Spices & Seasonings Category
         ArrayList<Item> spiceList = new ArrayList<>();
         spiceList.add(new Item("MSG (L)", 2));
         spiceList.add(new Item("Bay Leaves", 1));
@@ -75,56 +87,52 @@ public class MainApp {
         spiceList.add(new Item("Yellow ginger powder", 3));
         spiceList.add(new Item("Curry powder (10kg)", 2));
         spiceList.add(new Item("Red Curry Paste", 2));
-        spiceList.add(new Item("Green Curry Paste", 2));
+        spiceList.add(new Item("Green curry paste", 2));
         spiceList.add(new Item("Wah loong mixed spice", 3));
         spiceList.add(new Item("Food soda", 2));
         spiceList.add(new Item("Star anise", 3));
         spiceList.add(new Item("Cinnamon sticks", 2));
         manager.addCategory(new spiceAndSeasonings(spiceList));
 
-        // === Sample interaction ===
-        Scanner scanner = new Scanner(System.in);
-        boolean running = true;
-        while (running) {
-            System.out.println("\nChoose an option:");
-            System.out.println("1. Display All Stock");
-            System.out.println("2. Search for Item");
-            System.out.println("3. Update Item Quantity");
-            System.out.println("4. Show Low Stock Items");
+        // ================
+        // Main Menu Loop
+        // ================
+        while (true) {
+            System.out.println("\n=== Inventory System Menu ===");
+            System.out.println("1. Display all stock");
+            System.out.println("2. Search for item");
+            System.out.println("3. Update quantity");
+            System.out.println("4. Check low stock");
             System.out.println("5. Exit");
-            System.out.print("Enter choice: ");
+            System.out.print("Enter your choice: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            int choice = scanner.nextInt(); // take input from user
+            scanner.nextLine(); // consume leftover newline
 
-            switch (choice) {
-                case 1:
-                    manager.displayAllStock();
-                    break;
-                case 2:
-                    System.out.print("Enter item name to search: ");
-                    String searchName = scanner.nextLine();
-                    manager.searchItem(searchName);
-                    break;
-                case 3:
-                    System.out.print("Enter item name to update: ");
-                    String updateName = scanner.nextLine();
-                    System.out.print("Enter new quantity: ");
-                    int newQty = scanner.nextInt();
-                    manager.updateQuantity(updateName, newQty);
-                    break;
-                case 4:
-                    manager.checkLowStock(1);
-                    break;
-                case 5:
-                    running = false;
-                    System.out.println("Exiting...");
-                    break;
-                default:
-                    System.out.println("Invalid choice.");
+            if (choice == 1) {
+                manager.displayAllStock(); // show everything
+            } else if (choice == 2) {
+                System.out.print("Enter item name to search: ");
+                String itemName = scanner.nextLine();
+                manager.searchItem(itemName);
+            } else if (choice == 3) {
+                System.out.print("Enter item name to update: ");
+                String itemName = scanner.nextLine();
+                System.out.print("Enter new quantity: ");
+                int quantity = scanner.nextInt();
+                manager.updateQuantity(itemName, quantity);
+            } else if (choice == 4) {
+                System.out.print("Enter threshold value: ");
+                int threshold = scanner.nextInt();
+                manager.checkLowStock(threshold);
+            } else if (choice == 5) {
+                System.out.println("Exiting..."); // end program
+                break;
+            } else {
+                System.out.println("Invalid choice. Try again.");
             }
         }
 
-        scanner.close();
+        scanner.close(); // close scanner after use
     }
 }
