@@ -97,6 +97,6 @@ Encapsulation (Item hides its data using private fields)
 
 Inheritance (spiceAndSeasonings(and all categories) inherits from StockCategory)
 
-Polymorphism (you're treating spiceAndSeasonings as a StockCategory)
+Polymorphism (treating spiceAndSeasonings as a StockCategory)
 
 Composition (InventoryManager is composed of StockCategory objects)
