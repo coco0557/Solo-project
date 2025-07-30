@@ -35,3 +35,28 @@ public class noodlesAndRice {
     }
     
 }
+
+
+import java.util.ArrayList;
+public class noodlesAndRice extends StockCategory {
+    
+    public noodlesAndRice(ArrayList<String> items) {
+        super(items); 
+    }
+  
+    public static void main(String[] args) {
+        ArrayList<String>NoodleRiceList = new ArrayList<>();
+        NoodleRiceList.add("Rice");
+        NoodleRiceList.add("Noodle");
+        NoodleRiceList.add("Udon");
+        NoodleRiceList.add("Rice Sticks");
+        NoodleRiceList.add("Vietnamese rice paper");
+        NoodleRiceList.add("Rice stick ban pho");
+        noodlesAndRice restock = new noodlesAndRice(NoodleRiceList);
+        
+        InventoryManager manager = new InventoryManager();
+        manager.addCategory(restock);
+        manager.displayAllStock();
+    }
+    
+}
