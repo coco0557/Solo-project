@@ -85,3 +85,7 @@ the next step for me now is to create a StockManagement system
 Now that they are grouped into classes i have to establish how the classes relate to eachother (i.e. inheritance, composition etc)
 
 i will be using composition
+
+30/07/25
+i will be creating an Inventory management file as this will allow me to 
+display items from all classes and will become the centra place for managing stock in the future.
