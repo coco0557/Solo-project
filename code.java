@@ -131,7 +131,7 @@ OUTPUT:
 
 
 // new update for the code, i created a superclass called StockCategory.java, 
-// this way the code can be alot neater while utilising OOP methods to streamline my code.
+// this way the codebase can cleaner and more modular by using OOP principles
     // i will be using this method for all of the classes.
     
     //StockCategory.java parent class:
