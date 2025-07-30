@@ -88,4 +88,15 @@ i will be using composition
 
 30/07/25
 i will be creating an Inventory management file as this will allow me to 
-display items from all classes and will become the centra place for managing stock in the future.
+display items from all classes and will become the centra place for 
+managing stock in the future.
+i have created and Inventory manager, StockCategory and Item.java 
+here are what all of them do and how they relate to OOP
+
+Encapsulation (Item hides its data using private fields)
+
+Inheritance (spiceAndSeasonings(and all categories) inherits from StockCategory)
+
+Polymorphism (you're treating spiceAndSeasonings as a StockCategory)
+
+Composition (InventoryManager is composed of StockCategory objects)
