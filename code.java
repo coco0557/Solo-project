@@ -126,3 +126,67 @@ OUTPUT:
 - Crabmeat
 - Shrimp 100/200
 - Scallop
+
+
+
+
+// new update for the code, i created a superclass called StockCategory.java, 
+// this way the code can be alot neater while utilising OOP methods to streamline my code.
+    // i will be using this method for all of the classes.
+    
+    //StockCategory.java parent class:
+    
+    import java.util.ArrayList;
+
+public class StockCategory {
+    protected ArrayList<String> items;
+    
+    public StockCategory(ArrayList<String> items) {
+        this.items = items;
+    }
+ public void addItem(String item){
+     items.add(item);
+ }   
+ public void displayItems(String categoryName){
+     System.out.println("===" + categoryName + "===");
+     for (String item : items) {
+         System.out.println("- " + item);
+         
+     }
+ }
+ public ArrayList<String> getItems() {
+     return items;
+ }
+}
+
+
+//Spices and seasonings child class:
+
+import java.util.ArrayList;
+public class spiceAndSeasonings extends StockCategory {
+    
+    public spiceAndSeasonings(ArrayList<String> items) {
+    super(items);
+
+    }
+    public static void main(String[] args) {
+        ArrayList<String> spiceList = new ArrayList<>();
+        spiceList.add("MSG (L)");
+        spiceList.add("Bay Leaves");
+        spiceList.add("Ground white pepper");
+        spiceList.add("white sugar ");
+        spiceList.add("salt (L)");
+        spiceList.add("Yellow ginger powder");
+        spiceList.add("Curry powder (10kg)");
+        spiceList.add("Red Curry Paste");
+        spiceList.add("Green curry paste");
+        spiceList.add("Wah loong mixed spice");
+        spiceList.add("Food soda");
+        spiceList.add("Star anise");
+        spiceList.add("Cinnamon sticks");
+        
+        spiceAndSeasonings spiceStock = new spiceAndSeasonings(spiceList);
+        spiceStock.displayItems("Spices and Seasonings");
+    }
+    
+}
