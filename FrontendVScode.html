@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RestockWise - Restaurant Inventory</title>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .header {
+        background-color: #0077b6;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #005f87;
+        padding: 15px 20px;
+    }
+    .nav-btn {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+    .nav-btn:hover {
+        background-color: #004466;
+    }
+    .banner {
+        text-align: center;
+        padding: 50px;
+        background-color: #0077b6;
+        color: white;
+        font-size: 1.5em;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .features {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .feature {
+        background: #0077b6;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+    }
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .tab {
+        flex: 1;
+        padding: 10px;
+        cursor: pointer;
+        background: #0077b6;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .tab.active {
+        background: #005f87;
+    }
+    input, select, textarea {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0077b6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #005f87;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">RestockWise - Inventory System</div>
+
+<nav class="nav-container">
+    <a href="#display-all-stock" class="nav-btn">Display all stock</a>
+    <a href="#Search-for-item" class="nav-btn">Search for item</a>
+    <a href="#update-quantity" class="nav-btn">Update quantity</a>
+    <a href="#check-low-stock" class="nav-btn">Check low stock</a>
+    <a href="#exit" class="nav-btn">Exit</a>
+</nav>
+
+<div class="banner">
+    <h1>Track, Manage, and Refill Your Stock with Ease</h1>
+</div>
