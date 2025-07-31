@@ -93,10 +93,10 @@ managing stock in the future.
 i have created and Inventory manager, StockCategory and Item.java 
 here are what all of them do and how they relate to OOP
 
-Encapsulation (Item hides its data using private fields)
+Encapsulation ('Item' hides its data using private fields)
 
-Inheritance (spiceAndSeasonings(and all categories) inherits from StockCategory)
+Inheritance ('spiceAndSeasonings'(and all categories) inherits from 'StockCategory')
 
-Polymorphism (treating spiceAndSeasonings as a StockCategory)
+Polymorphism (treating 'spiceAndSeasonings' as a 'StockCategory')
 
-Composition (InventoryManager is composed of StockCategory objects)
+Composition ('InventoryManager' is composed of 'StockCategory' objects)
