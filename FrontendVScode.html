@@ -107,13 +107,45 @@
 <div class="header">RestockWise - Inventory System</div>
 
 <nav class="nav-container">
-    <a href="#display-all-stock" class="nav-btn">Display all stock</a>
-    <a href="#Search-for-item" class="nav-btn">Search for item</a>
-    <a href="#update-quantity" class="nav-btn">Update quantity</a>
-    <a href="#check-low-stock" class="nav-btn">Check low stock</a>
-    <a href="#exit" class="nav-btn">Exit</a>
+    <a href="AllStock.html" class="nav-btn">Display all stock</a>
+    <a href="Search.html" class="nav-btn">Search for item</a>
+    <a href="UpdateStock.html" class="nav-btn">Update quantity</a>
+    <a href="CheckLowStock.html" class="nav-btn">Check low stock</a>
+    <a href="stock.html" class="nav-btn">Home</a>
 </nav>
 
 <div class="banner">
     <h1>Track, Manage, and Refill Your Stock with Ease</h1>
 </div>
+
+<div id="dashboard" class="container">
+    <h2>Inventory Overview</h2>
+    <p>Monitor key supply levels and restocking needs below.</p>
+    <div class="features">
+        <div class="feature">Low Stock Alerts</div>
+        <div class="feature">Real-Time Updates</div>
+        <div class="feature">Ingredient Categories</div>
+    </div>
+</div>
+
+<div id="add-stock" class="container">
+    <h2>Restock Ingredients</h2>
+    <input type="text" placeholder="Enter item name to search:" required>
+    <input type="number" min="0" placeholder="Current Quantity">
+    <input type="number" min="1" placeholder="Update Quantity">
+    <select>
+        <option disabled selected>Select Category</option>
+        <option value="vegetables and fresh produce">Vegetables and fresh produce</option>
+        <option value="meat and seafood">Meat and seafood</option>
+        <option value="Prepared frozen items">Prepared frozen items</option>
+        <option value="noodels and rice">Noodles and rice</option>
+        <option value="Canned and Jarred goods">Canned and Jarred goods</option>
+        <option value="Spices and Seasonings">Spices and Seasonings</option>
+    </select>
+    <input type="date" placeholder="Restock Date">
+    <textarea rows="3" placeholder="Optional notes or supplier info..."></textarea>
+    <button>Add to Inventory</button>
+</div>
+
+</body>
+</html>
