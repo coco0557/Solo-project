@@ -102,6 +102,5 @@ Polymorphism (treating 'spiceAndSeasonings' as a 'StockCategory')
 Composition ('InventoryManager' is composed of 'StockCategory' objects)
 
 31/07/25
-i have decided to change my frontend design plan.
-instead of using VScode to do my UI, i am going to continue on netbeans 
-and use javaFX to create the UI
+i am now ready to begin design for my frontend UI on VScode
+
