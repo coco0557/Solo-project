@@ -227,3 +227,20 @@ public class spiceAndSeasonings extends StockCategory {
     }
     
 }
+
+
+//update, i have removed the main() from all the 
+//Categories and left the MainApp.java file as the main. 
+// i need the main in the categories at the start so i could individually run the
+// files and see any errors or any fixes that were needed 
+//so the categories look like this now - 
+
+import java.util.ArrayList;
+public class spiceAndSeasonings extends StockCategory {
+    
+    public spiceAndSeasonings(ArrayList<Item> items) {
+    super(items);
+
+    }
+  
+}
