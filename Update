@@ -1,1 +1,11 @@
 
+FreshCount started as a Java console application that used Scanner to collect input and print outputs to the terminal.
+The goal now is to transform it into a full-stack web application with:
+
+A Java backend (Servlet-based)
+
+A dynamic HTML/CSS/JavaScript frontend
+
+AJAX/Fetch API calls to exchange JSON data between the frontend and backend
+
+Database persistence (SQLite/MySQL) in later phases
