@@ -2,7 +2,7 @@
 I’m building this project while learning, so there will be regular updates and improvements as I progress. 
 I expect there will be some errors and trial and error early on, but this is part of my learning process.
 
-I’m using VS Code for the frontend design and NetBeans 25 for the backend Java development.
+I’m using VS Code for the frontend design and NetBeans 23 for the backend Java development.
 Keeping these separate helps me stay organised while I focus on functionality first and decide on the design later.
 
 The initial step was to speak directly with the owner of the restaurant where I work, and explain the idea of digitising the stock system. 
