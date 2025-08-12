@@ -32,8 +32,11 @@ I’m documenting all progress and learning as I go.
 🧱 Project Structure
 
 ── Item.java # Class representing an item with name + quantity
+
 ── StockCategory.java # Superclass for all category types
+
 ── InventoryManager.java # Manages the entire stock system
+
 
 ─ spiceAndSeasonings.java # Category: Spices and Seasonings
 ─ MeatAndSeafood.java # Category: Meats & Seafood
