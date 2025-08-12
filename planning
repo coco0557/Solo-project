@@ -5,12 +5,31 @@ I expect there will be some errors and trial and error early on, but this is par
 I’m using VS Code for the frontend design and NetBeans 23 for the backend Java development.
 Keeping these separate helps me stay organised while I focus on functionality first and decide on the design later.
 
-The initial step was to speak directly with the owner of the restaurant where I work, and explain the idea of digitising the stock system. 
-The goal is to make the system accessible from anywhere
-so that the owner and kitchen staff can check stock levels remotely, without needing to be physically at the restaurant.
+The idea for FreshCount came directly from my workplace — a Chinese restaurant where I’ve been part of the team 
+for several years.
+While the kitchen runs smoothly, stock tracking is still handled manually and locally. This means:
 
-There are currently around 99 items to be managed in the system, which I’m organising into different categories and Java classes
-(e.g Meat & Seafood, Vegetables, Prepared Items). These will help structure the code in a maintainable way as the project grows.
+Staff must be physically in the restaurant to check inventory.
+There’s no quick way for the owner to see stock levels remotely.
+Ordering and restocking decisions can be delayed if key staff aren’t on-site.
+
+Initial Step: Speaking to the Owner
+Before writing any code, I sat down with the restaurant owner to explain the vision:
+A lightweight, digital inventory system that can be accessed from anywhere, at any time.
+
+The goal is to:
+Allow the owner to monitor stock remotely (even from home or while away).
+Give kitchen staff an easy way to check quantities without searching shelves.
+Provide real-time updates so low-stock items are spotted early.
+
+The owner was supportive of the idea. While the kitchen doesn’t need this system to operate day to day, 
+it would make stock control more efficient and flexible. For me, this 
+is also a real world project that strengthens my skills in preparation for my future carreer.
+
+There are currently around 99 items to be managed in the system, which I’m organising into different 
+categories and Java classes
+(e.g Meat & Seafood, Vegetables, Prepared Items). These will help structure the 
+code in a maintainable way as the project grows.
 here are the classes i have decided to group the items (objects) into:
 
 🥩 Meat & Seafood  
