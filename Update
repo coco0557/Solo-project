@@ -9,3 +9,66 @@ A dynamic HTML/CSS/JavaScript frontend
 AJAX/Fetch API calls to exchange JSON data between the frontend and backend
 
 Database persistence (SQLite/MySQL) in later phases
+
+Why Remove the Scanner for Frontend Input
+Overview
+As FreshCount evolves from a console-based application to a full web-based stock management system, removing the Java Scanner in favor of frontend input is a crucial architectural decision that aligns with modern development practices and our restaurant's real-world needs.
+Key Benefits
+1. Separation of Concerns
+
+Backend (Java): Handles business logic, data processing, and storage
+Frontend (HTML/JS/CSS): Manages user interface and user experience
+This creates cleaner, more maintainable code where each layer has a specific responsibility
+
+2. Better User Experience
+
+Scanner: Command-line interface is text-based and limited
+Web Frontend: Rich, interactive UI with buttons, forms, dropdowns, and visual feedback
+Users can see stock levels in tables, get visual warnings for low stock, and use intuitive navigation
+
+3. Remote Access (Key for Our Use Case!)
+Since the restaurant owner wants to check stock remotely, a web interface is essential:
+
+Scanner: Only works locally on the machine running the Java program
+Web Frontend: Accessible from any device with internet access (phone, tablet, home computer)
+
+4. Multi-User Support
+
+Scanner: Single user at a time
+Web Frontend: Multiple staff members can access simultaneously
+
+5. Data Visualization
+
+Scanner: Text-only output
+Web Frontend: Charts, color-coded stock levels, search/filter capabilities
+
+Implementation Impact
+This change transforms FreshCount from a local development tool into a practical, production-ready system that meets the actual needs of our restaurant environment - enabling remote monitoring and multi-user access as originally requested by the owner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
