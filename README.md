@@ -31,18 +31,18 @@ I’m documenting all progress and learning as I go.
 
 🧱 Project Structure
 
-├── Item.java # Class representing an item with name + quantity
-├── StockCategory.java # Superclass for all category types
-├── InventoryManager.java # Manages the entire stock system
-│
-├── spiceAndSeasonings.java # Category: Spices and Seasonings
-├── MeatAndSeafood.java # Category: Meats & Seafood
-├── VegandFresh.java # Category: Vegetables & Fresh Produce
-├── CannedAndJarred.java # Category: Canned & Jarred goods
-├── noodlesAndRice.java # Category: Noodles & Rice
-├── preparedFrozenItems.java # Category: Frozen prepared items
-│
-└── MainApp.java # Entry point of the program with user input menu
+── Item.java # Class representing an item with name + quantity
+── StockCategory.java # Superclass for all category types
+── InventoryManager.java # Manages the entire stock system
+
+─ spiceAndSeasonings.java # Category: Spices and Seasonings
+─ MeatAndSeafood.java # Category: Meats & Seafood
+─ VegandFresh.java # Category: Vegetables & Fresh Produce
+─ CannedAndJarred.java # Category: Canned & Jarred goods
+─ noodlesAndRice.java # Category: Noodles & Rice
+─ preparedFrozenItems.java # Category: Frozen prepared items
+
+── MainApp.java # Entry point of the program with user input menu
 
 🔧 Technologies Used
 
