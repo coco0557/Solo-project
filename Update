@@ -12,7 +12,9 @@ Database persistence (SQLite/MySQL) in later phases
 
 Why Remove the Scanner for Frontend Input
 Overview
-As FreshCount evolves from a console-based application to a full web-based stock management system, removing the Java Scanner in favor of frontend input is a crucial architectural decision that aligns with modern development practices and our restaurant's real-world needs.
+As FreshCount evolves from a console-based application to a full web-based stock management system, 
+removing the Java Scanner in favor of frontend input is a crucial architectural decision that aligns 
+with modern development practices and our restaurant's real-world needs.
 Key Benefits
 1. Separation of Concerns
 
